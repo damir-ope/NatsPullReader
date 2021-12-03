@@ -1,5 +1,5 @@
 # NatsPullReader
-NatsReader allows caller to pull a configurable number of messages from a Nats Server. The method NatsReader::get return a List<Message> objects to the caller.
+NatsReader allows caller to pull a configurable number of messages from a Nats Server. The method NatsReader::get return a `List<Message>` to the caller.
 
 These classes provide  NATS pull reader functionality. Caller passes an NatsConfiguration object to the ctor of the NatsReader class.
 The configuration defines, stream name, subject name as well as an optional filter name to provide a subset of the messages matching subject name.
