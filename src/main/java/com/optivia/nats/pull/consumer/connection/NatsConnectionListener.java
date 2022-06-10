@@ -1,4 +1,4 @@
-package com.optivia.nats.pull.consumer;
+package com.optivia.nats.pull.consumer.connection;
 
 import io.nats.client.Connection;
 import io.nats.client.ConnectionListener;
@@ -17,14 +17,7 @@ import org.apache.logging.log4j.Logger;
  */
 public final class NatsConnectionListener implements ConnectionListener {
     private static final Logger logger = LogManager.getLogger(NatsConnectionListener.class);
-    private final NatsReader app;
-    /*
-     * Reference to the reader if needs anything
-     * @param app reader application
-     */
-    public NatsConnectionListener(final NatsReader app) {
-        this.app = app;
-    }
+
     @Override
     public void connectionEvent(Connection nc, Events event) {
         if (event == Events.DISCOVERED_SERVERS) {

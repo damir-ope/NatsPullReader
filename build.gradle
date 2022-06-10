@@ -17,6 +17,11 @@ dependencies {
 
     implementation 'org.apache.logging.log4j:log4j-core:2.14.1'
     implementation 'org.apache.logging.log4j:log4j-api:2.14.1'
+
+    // https://mvnrepository.com/artifact/com.dslplatform/dsl-json-java8
+    implementation group: 'com.dslplatform', name: 'dsl-json-java8', version: '1.9.9'
+    //invoke the compile time databinding
+    annotationProcessor 'com.dslplatform:dsl-json-java8:1.9.9'
 }
 
 test {
